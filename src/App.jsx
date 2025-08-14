@@ -88,6 +88,7 @@ export default function App() {
   
         
         <div className="w-full md:w-2/3 lg:w-3/4 p-6 overflow-y-auto">
+        {/* <h1 className='text-black font-bold w-3xl text-center text-4xl'>MARVEL</h1> */}
           <CharacterList
             characters={characters}
             onEdit={handleEdit}

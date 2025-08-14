@@ -1,3 +1,4 @@
+//
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -6,6 +7,8 @@ const app = express();
 
 app.use(cors());       
 app.use(bodyParser.json());
+app.use(express.static('../public'));
+
 
 
 let characters = [
@@ -14,7 +17,7 @@ let characters = [
       name: "Spider-Man",
       realName: "Peter Parker",
       universe: "Earth-616",
-      image: "Spiderman.jpg"
+      image: "/Images/Spiderman.jpg"
     },
     {
       id: 2,

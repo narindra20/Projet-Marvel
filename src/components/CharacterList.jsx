@@ -10,10 +10,10 @@ export default function CharacterList({ characters, onEdit, onDelete }) {
         >
           <div className="p-4 flex flex-col items-center w-full max-w-xs">
           <img 
-             src={`../Images/${char.image}`} 
-             alt={char.name} 
+              src={`http://localhost:3000${char.image}`} 
+              alt={char.name} 
              className="w-32 h-32 object-cover rounded-full mb-4"
-          />
+            />
             <h3 className="font-semibold text-xl text-gray-800">{char.name}</h3>
             <p className="text-gray-600 mt-2">
               <span className="text-gray-800">{char.realName}</span>

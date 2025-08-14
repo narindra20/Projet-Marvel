@@ -1,20 +1,18 @@
 import React from 'react';
-import Avengers from '../Images/Avengers.jpeg'
+import Avengers from '../assets/Avengers.jpeg'
 
 export default function CharacterForm({ form, onChange, onSubmit, onCancel, isEditing }) {
   return (
+  
     <form 
-      onSubmit={onSubmit} 
-      className="p-6 rounded-lg shadow-md mb-6 relative text-black"
-      style={{
-        backgroundImage: `url(${Avengers})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundColor: 'rgba(0, 0, 0, 0.2)',
-      }}
-    >
-      <div className="space-y-4">
+  onSubmit={onSubmit} 
+  className="p-6 rounded-lg shadow-md mb-6 relative text-black bg-cover bg-center bg-no-repeat"
+  style={{
+    backgroundImage: `url(${Avengers})`,
+  }}
+>
+  <div className="absolute inset-0 bg-black opacity-30 rounded-lg z-0"></div>
+  <div className="relative z-10 text-white space-y-4">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-gray-100 mb-1">
             Nom du personnage
