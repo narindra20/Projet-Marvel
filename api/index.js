@@ -75,7 +75,7 @@ app.get('/characters', (req, res) => {
     res.json(characters);
 });
 
-// POST /characters ==> Create a new character
+// POST 
 app.post('/characters', (req, res) => {
     const newCharacter = req.body;
     
@@ -92,7 +92,7 @@ app.post('/characters', (req, res) => {
     res.status(201).json(newCharacter);
 });
 
-// GET /characters/:id ==> Get a character by ID
+// GET 
 app.get('/characters/:id', (req, res) => {
     const id = parseInt(req.params.id);
     const character = characters.find(c => c.id === id);
@@ -104,7 +104,7 @@ app.get('/characters/:id', (req, res) => {
     }
 });
 
-// PUT /characters/:id ==> Update a character by ID
+// PUT 
 app.put('/characters/:id', (req, res) => {
     const id = parseInt(req.params.id);
     const updatedCharacter = req.body;
@@ -121,7 +121,7 @@ app.put('/characters/:id', (req, res) => {
     res.json(updatedCharacter);
 });
 
-// DELETE /characters/:id ==> Delete a character by ID
+// DELETE 
 app.delete('/characters/:id', (req, res) => {
     const id = parseInt(req.params.id);
     const index = characters.findIndex(c => c.id === id);
