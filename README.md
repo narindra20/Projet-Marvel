@@ -1,12 +1,47 @@
-# React + Vite
+# 🦸‍♂️ Marvel Characters Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Une application fullstack pour gérer les personnages Marvel : ajouter, modifier et supprimer. Interface moderne en React, backend Express robuste, et branding fidèle à l’univers Marvel.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Fonctionnalités
 
-## Expanding the ESLint configuration
+- 🔍 Afficher tous les personnages Marvel
+- ➕ Ajouter un nouveau personnage
+- ✏️ Modifier les infos d’un personnage
+- ❌ Supprimer un personnage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+
+---
+
+## ⚙️ Installation
+
+```bash
+# 1. Cloner le repo
+git clone https://github.com/narindra20/Projet-Marvel.git
+cd marvel-manager
+
+# 2. Installer les dépendances backend
+cd api 
+npm install
+
+# 3. Lancer le serveur backend
+node index.js
+
+# 4. Installer les dépendances frontend
+cd projet-marvel
+npm install
+
+# 5. Lancer l'application React
+npm start
+
+# 6. Pour Afficher 
+cd api
+node index ou index.js
+
+#On ouvre un autre terminal
+npm run dev 
+
+
