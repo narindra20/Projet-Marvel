@@ -21,7 +21,7 @@ Une application fullstack pour gérer les personnages Marvel : ajouter, modifier
 ```bash
 # 1. Cloner le repo
 git clone https://github.com/narindra20/Projet-Marvel.git
-cd marvel-manager
+cd projet-marvel
 
 # 2. Installer les dépendances backend
 cd api 
