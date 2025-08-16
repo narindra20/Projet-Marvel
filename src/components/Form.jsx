@@ -1,7 +1,7 @@
 import React from 'react';
 import Avengers from '../assets/Avengers.jpeg'
 
-export default function CharacterForm({ form, onChange, onSubmit, onCancel, isEditing }) {
+export default function Form({ form, onChange, onSubmit, onCancel, isEditing }) {
   return (
   
     <form 

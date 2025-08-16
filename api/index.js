@@ -84,7 +84,6 @@ app.post('/characters', (req, res) => {
         return res.status(400).json({ error: 'Name, realName and universe are required' });
     }
     
-    // Générer une nouvelle ID
     const newId = characters.length > 0 ? Math.max(...characters.map(c => c.id)) + 1 : 1;
     newCharacter.id = newId;
     

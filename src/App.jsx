@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import CharacterList from './components/CharacterList';
-import CharacterForm from './components/CharacterForm';
+import List from './components/List';
+import Form from './components/Form';
 
 
 const API_URL = 'http://localhost:3000/characters';
@@ -78,7 +78,7 @@ export default function App() {
         
         <div className="w-full md:w-1/3 lg:w-1/4 p-6 overflow-y-auto bg-gray-50 text-black">
         <h1 className='text-red-800 text-3xl text-center mb-5 font-semibold'>MARVEL CHARACTERS</h1>
-          <CharacterForm
+          <Form
             form={form}
             onChange={handleChange}
             onSubmit={handleSubmit}
@@ -89,7 +89,7 @@ export default function App() {
   
         
         <div className="w-full md:w-2/3 lg:w-3/4 p-6 overflow-y-auto">
-          <CharacterList
+          <List
             characters={characters}
             onEdit={handleEdit}
             onDelete={handleDelete}

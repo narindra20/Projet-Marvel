@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function CharacterList({ characters, onEdit, onDelete }) {
+export default function List({ characters, onEdit, onDelete }) {
   return (
     <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
       {characters.map(char => (
