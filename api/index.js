@@ -1,4 +1,3 @@
-//
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -24,49 +23,49 @@ let characters = [
       name: "Iron Man",
       realName: "Tony Stark",
       universe: "Earth-616",
-      image: "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/6f/Iron_Man_Mark_III.png"
+      image: "/Images/Iron-Man.png"
     },
     {
       id: 3,
       name: "Captain America",
       realName: "Steve Rogers",
       universe: "Earth-616",
-      image: "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/2e/CaptainAmerica-EndgameProfile.jpg"
+      image: "/Images/CaptainAmerica.png"
     },
     {
       id: 4,
       name: "Black Widow",
       realName: "Natasha Romanoff",
       universe: "Earth-616",
-      image: "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/3e/NatashaRomanoff-EndgameProfile.jpg"
+      image: "/Images/BlackWidow.jpg"
     },
     {
       id: 5,
       name: "Black Panther",
       realName: "T'Challa",
       universe: "Earth-616",
-      image: "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/2f/T%27Challa_Profile.jpg"
+      image: "/Images/BlackPanther.png"
     },
     {
       id: 6,
       name: "Doctor Strange",
       realName: "Stephen Strange",
       universe: "Earth-616",
-      image: "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/7e/Doctor_Strange_Profile.jpg"
+      image: "/Images/DoctorStrange.png"
     },
     {
       id: 7,
       name: "Scarlet Witch",
       realName: "Wanda Maximoff",
       universe: "Earth-616",
-      image: "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/7e/WandaVision_Profile.jpg"
+      image: "/Images/ScarletWitch.png"
     },
     {
       id: 8,
       name: "Hulk",
       realName: "Bruce Banner",
       universe: "Earth-616",
-      image: "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/3d/Hulk_Profile.jpg"
+      image: "/Images/Hulk.png"
     }
   ];
   
@@ -80,12 +79,12 @@ app.get('/characters', (req, res) => {
 app.post('/characters', (req, res) => {
     const newCharacter = req.body;
     
-    // Vérification des données requises
+    
     if (!newCharacter.name || !newCharacter.realName || !newCharacter.universe) {
         return res.status(400).json({ error: 'Name, realName and universe are required' });
     }
     
-    // Génération d'un nouvel ID
+    // Générer une nouvelle ID
     const newId = characters.length > 0 ? Math.max(...characters.map(c => c.id)) + 1 : 1;
     newCharacter.id = newId;
     
@@ -135,7 +134,7 @@ app.delete('/characters/:id', (req, res) => {
     res.status(204).end();
 });
 
-// Démarrer le serveur
+
 const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);

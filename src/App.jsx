@@ -77,6 +77,7 @@ export default function App() {
       <div className="flex h-screen overflow-hidden">
         
         <div className="w-full md:w-1/3 lg:w-1/4 p-6 overflow-y-auto bg-gray-50 text-black">
+        <h1 className='text-red-800 text-3xl text-center mb-5 font-semibold'>MARVEL CHARACTERS</h1>
           <CharacterForm
             form={form}
             onChange={handleChange}
@@ -88,7 +89,6 @@ export default function App() {
   
         
         <div className="w-full md:w-2/3 lg:w-3/4 p-6 overflow-y-auto">
-        {/* <h1 className='text-black font-bold w-3xl text-center text-4xl'>MARVEL</h1> */}
           <CharacterList
             characters={characters}
             onEdit={handleEdit}
