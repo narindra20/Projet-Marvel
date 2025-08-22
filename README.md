@@ -26,6 +26,7 @@ cd projet-marvel
 # 2. Installer les dépendances backend
 cd api 
 npm install
+npm install express
 
 # 3. Lancer le serveur backend
 node index.js
